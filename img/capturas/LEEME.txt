@@ -1,0 +1,10 @@
+Capturas reales para la web. Van en es/ (app en español) y en/ (app en inglés).
+Si falta una en en/, la web en inglés usa la de es/. Si falta en las dos, se ve el celular dibujado.
+
+Nombres exactos (PNG):
+  touchpad.png          Touchpad conectado (vertical)
+  teclado.png           Menú Teclado, pestaña Teclas o Atajos (vertical)
+  teclado-completo.png  Teclado completo (HORIZONTAL)
+  multimedia.png        Menú Multimedia con una canción sonando y carátula (vertical)
+  presentar.png         Modo presentación (vertical)
+  mas.png               Menú Más (vertical)

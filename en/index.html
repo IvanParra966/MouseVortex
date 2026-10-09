@@ -1,0 +1,413 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MouseVortex — Control your PC from your phone</title>
+  <meta name="description" content="Use your phone as your PC's touchpad, keyboard and remote. Music, presentations, browser, scheduled shutdown and more, wireless and encrypted.">
+  <meta name="theme-color" content="#08090b">
+  <meta property="og:title" content="MouseVortex — Your PC, in the palm of your hand">
+  <meta property="og:description" content="Touchpad, keyboard, music, presentations and much more from your phone. Wireless and encrypted.">
+  <meta property="og:image" content="../img/icon.png">
+  <link rel="icon" href="../img/favicon.png">
+  <link rel="alternate" hreflang="es" href="../">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+  <script>
+    document.documentElement.className = "";
+    // If a screenshot is missing, the drawn screen underneath shows instead.
+    function vxShot(img) {
+      var fallback = img.getAttribute("data-fallback");
+      if (fallback) { img.removeAttribute("data-fallback"); img.src = fallback; return; }
+      var target = img.getAttribute("data-remove");
+      (target ? img.closest(target) : img).remove();
+    }
+  </script>
+  <script src="../site.js" defer></script>
+</head>
+<body>
+  <header class="top">
+    <div class="wrap">
+      <a class="brand" href="./"><img src="../img/icon.png" alt=""><span>MouseVortex</span></a>
+      <nav class="nav">
+        <a class="hide-sm" href="#features">Features</a>
+        <a class="hide-sm" href="#pro">Pro</a>
+        <a href="help.html">Help</a>
+        <a class="lang" href="../" lang="es">ES</a>
+        <a class="get" href="download.html">Download</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="hero">
+      <div class="wrap">
+        <div>
+          <span class="eyebrow reveal"><i></i>For Android and Windows</span>
+          <h1 class="reveal d1">Your PC, in the <span class="glow-text">palm of your hand.</span></h1>
+          <p class="lead reveal d2">Use your phone as your PC's touchpad, keyboard and remote. Music, presentations, browser, clipboard and much more, wireless and encrypted.</p>
+          <div class="actions reveal d2">
+            <a class="btn primary" href="https://play.google.com/store/apps/details?id=com.mousevortex.app">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4 2.6v18.8c0 .4.4.7.8.5L21 12.9c.4-.2.4-.8 0-1L4.8 2.1c-.4-.2-.8.1-.8.5z"/></svg>
+              <span class="label"><small>Get it on</small>Google Play</span>
+            </a>
+            <a class="btn" href="download.html">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3 5.5 10 4.5v7H3zM11 4.3 21 3v8.5H11zM3 12.5h7v7l-7-1zM11 12.5h10V21l-10-1.4z"/></svg>
+              <span class="label"><small>Free program</small>Download for PC</span>
+            </a>
+          </div>
+          <div class="badges reveal d2">
+            <span>No ads</span>
+            <span>No accounts</span>
+            <span>Nothing goes through the internet</span>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <svg class="rings" viewBox="0 0 640 640" aria-hidden="true">
+            <defs>
+              <linearGradient id="rg" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#3de3a0" stop-opacity="0"/>
+                <stop offset="0.5" stop-color="#3de3a0" stop-opacity="0.6"/>
+                <stop offset="1" stop-color="#3de3a0" stop-opacity="0.05"/>
+              </linearGradient>
+            </defs>
+            <circle class="r1" cx="320" cy="320" r="300" stroke="url(#rg)" stroke-width="2" stroke-dasharray="760 1125"/>
+            <circle class="r2" cx="320" cy="320" r="240" stroke="url(#rg)" stroke-width="8" stroke-dasharray="560 948" opacity="0.5"/>
+            <circle class="r3" cx="320" cy="320" r="180" stroke="url(#rg)" stroke-width="14" stroke-dasharray="330 801" opacity="0.35"/>
+          </svg>
+
+          <div class="stack">
+            <div class="device back" aria-hidden="true">
+              <div class="device-screen">
+                <div class="mock"><div class="status"><i></i>Now playing</div><div class="pad"></div><div class="dock"><span></span><span class="on"></span><span></span><span></span><span></span></div></div>
+                <img class="shot" src="../img/capturas/en/multimedia.png" data-fallback="../img/capturas/es/multimedia.png" alt="" onerror="vxShot(this)">
+              </div>
+            </div>
+            <div class="device front">
+              <div class="device-screen">
+                <div class="mock"><div class="status"><i></i>Connected to My PC</div><div class="pad"><div class="trail"></div><div class="bar"></div></div><div class="clicks"><span></span><span></span><span></span></div><div class="dock"><span class="on"></span><span></span><span></span><span></span><span></span></div></div>
+                <img class="shot" src="../img/capturas/en/teclado.png" data-fallback="../img/capturas/es/teclado.png" alt="MouseVortex on a phone: touchpad, shortcuts and keyboard" onerror="vxShot(this)">
+              </div>
+            </div>
+          </div>
+
+          <div class="chip c1"><span class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg></span><span>Encrypted connection<small>Only your devices</small></span></div>
+          <div class="chip c2"><span class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m7 7 10 10-5 5V2l5 5L7 17"/></svg></span><span>Wi-Fi or Bluetooth<small>Your choice</small></span></div>
+          <div class="chip c3"><span class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5 6 9H2v6h4l5 4z"/><path d="M15.5 8.5a5 5 0 0 1 0 7M19 5a10 10 0 0 1 0 14"/></svg></span><span>Volume 64%<small>Instantly</small></span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="marquee" aria-label="Works with">
+      <p>Works with</p>
+      <div class="marquee-track">
+        <span>PowerPoint</span><span>Google Slides</span><span>Canva</span><span>Spotify</span><span>YouTube</span><span>VLC</span><span>Chrome</span><span>Edge</span><span>Firefox</span><span>Brave</span><span>Adobe Reader</span><span>Windows 10 and 11</span>
+        <span aria-hidden="true">PowerPoint</span><span aria-hidden="true">Google Slides</span><span aria-hidden="true">Canva</span><span aria-hidden="true">Spotify</span><span aria-hidden="true">YouTube</span><span aria-hidden="true">VLC</span><span aria-hidden="true">Chrome</span><span aria-hidden="true">Edge</span><span aria-hidden="true">Firefox</span><span aria-hidden="true">Brave</span><span aria-hidden="true">Adobe Reader</span><span aria-hidden="true">Windows 10 and 11</span>
+      </div>
+    </div>
+
+    <section>
+      <div class="wrap">
+        <div class="section-head center reveal">
+          <h2>Up and running in a minute</h2>
+          <p>Nothing to set up: scan a QR code and you're done.</p>
+        </div>
+        <ol class="steps">
+          <li class="reveal"><strong>Install the program on your PC</strong>Open it: it sits in the tray, next to the clock. <a href="download.html">Download</a></li>
+          <li class="reveal d1"><strong>Same Wi-Fi network</strong>Connect the phone and the PC to the same network. Bluetooth works too.</li>
+          <li class="reveal d2"><strong>Scan the QR code</strong>In the app, tap the QR button and scan the code on the PC. Next time it connects on its own.</li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="alt" id="features">
+      <div class="wrap">
+        <div class="section-head center reveal">
+          <h2>Everything you do on your PC, <span class="glow-text">from the couch</span></h2>
+          <p>An app designed to be used with one hand, without looking.</p>
+        </div>
+
+        <div class="showcase">
+          <div class="feature">
+            <div class="feature-media reveal">
+              <div class="device">
+                <div class="device-screen">
+                  <div class="mock"><div class="status"><i></i>Connected to My PC</div><div class="pad"><div class="trail"></div><div class="bar"></div></div><div class="clicks"><span></span><span></span><span></span></div><div class="dock"><span class="on"></span><span></span><span></span><span></span><span></span></div></div>
+                  <img class="shot" src="../img/capturas/en/touchpad.png" data-fallback="../img/capturas/es/touchpad.png" alt="Touchpad screen" loading="lazy" onerror="vxShot(this)">
+                </div>
+              </div>
+            </div>
+            <div class="feature-text reveal d1">
+              <span class="tag free">FREE</span>
+              <h2>A real touchpad</h2>
+              <p>It feels like a laptop's, but on the couch, in bed or from across the room.</p>
+              <ul>
+                <li><span>One finger moves the cursor: <strong>the faster you swipe, the farther</strong> it goes.</span></li>
+                <li><span>Tap to click, two fingers to <strong>right-click</strong>.</span></li>
+                <li><span>Two-finger scrolling that <strong>keeps gliding</strong>, like on a laptop.</span></li>
+                <li><span>Drag and select with the button below.</span></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="feature flip">
+            <div class="feature-media reveal">
+              <div class="device">
+                <div class="device-screen">
+                  <div class="mock keys"><div class="status"><i></i>Keyboard</div><div class="pad"><div class="trail"></div></div><div class="kb"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div></div>
+                  <img class="shot" src="../img/capturas/en/teclado.png" data-fallback="../img/capturas/es/teclado.png" alt="Keyboard menu with special keys and shortcuts" loading="lazy" onerror="vxShot(this)">
+                </div>
+              </div>
+            </div>
+            <div class="feature-text reveal d1">
+              <span class="tag free">FREE</span> <span class="tag pro">KEYS AND SHORTCUTS PRO</span>
+              <h2>Type as if you were at the PC</h2>
+              <p>With your phone's keyboard: what you type shows up on the PC instantly.</p>
+              <ul>
+                <li><span>Accents, emojis, autocorrect and <strong>voice typing</strong>.</span></li>
+                <li><span>Ctrl, Alt, Win, arrows and F1–F12, with <strong>Alt + Tab</strong> just like a real keyboard.</span></li>
+                <li><span>One-tap shortcuts: copy, paste, undo, save… and <strong>your own</strong>.</span></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="feature wide">
+            <div class="feature-text reveal">
+              <span class="tag pro">PRO</span>
+              <h2>A full PC keyboard, in landscape</h2>
+              <p>Turn your phone and every key is there. Each one stays pressed while your finger is on it, like a real keyboard.</p>
+              <ul>
+                <li><span>Several keys at once: <strong>it even works for games</strong>.</span></li>
+                <li><span>Latin American Spanish layout.</span></li>
+              </ul>
+            </div>
+            <div class="feature-media reveal d1">
+              <div class="device landscape">
+                <div class="device-screen">
+                  <div class="mock wide"><div class="kb"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div></div>
+                  <img class="shot" src="../img/capturas/en/teclado-completo.png" data-fallback="../img/capturas/es/teclado-completo.png" alt="Full keyboard in landscape" loading="lazy" onerror="vxShot(this)">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="feature">
+            <div class="feature-media reveal">
+              <div class="device">
+                <div class="device-screen">
+                  <div class="mock"><div class="status"><i></i>Now playing</div><div class="pad"></div><div class="dock"><span></span><span class="on"></span><span></span><span></span><span></span></div></div>
+                  <img class="shot" src="../img/capturas/en/multimedia.png" data-fallback="../img/capturas/es/multimedia.png" alt="Media menu with the song that's playing" loading="lazy" onerror="vxShot(this)">
+                </div>
+              </div>
+            </div>
+            <div class="feature-text reveal d1">
+              <span class="tag pro">PRO</span>
+              <h2>Your music and videos, without getting up</h2>
+              <p>Works with Spotify, YouTube, VLC and any player.</p>
+              <ul>
+                <li><span>Song, artist, <strong>cover art</strong> and a seek bar.</span></li>
+                <li><span>The PC's <strong>exact volume</strong>, always in sync.</span></li>
+                <li><span>A <strong>mixer</strong> for each program's volume.</span></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="feature flip">
+            <div class="feature-media reveal">
+              <div class="device">
+                <div class="device-screen">
+                  <div class="mock"><div class="status"><i></i>Present</div><div class="pad"></div><div class="clicks"><span></span><span></span><span></span></div><div class="dock"><span></span><span></span><span></span><span></span><span class="on"></span></div></div>
+                  <img class="shot" src="../img/capturas/en/presentar.png" data-fallback="../img/capturas/es/presentar.png" alt="Presentation mode" loading="lazy" onerror="vxShot(this)">
+                </div>
+              </div>
+            </div>
+            <div class="feature-text reveal d1">
+              <span class="tag pro">PRO</span>
+              <h2>Present without walking to the PC</h2>
+              <p>In class or at work: PowerPoint, Google Slides, Canva and PDF.</p>
+              <ul>
+                <li><span>Change slides with the <strong>volume buttons</strong>, without looking at your phone.</span></li>
+                <li><span><strong>Laser pointer</strong> and black screen so all eyes are on you.</span></li>
+                <li><span>A timer that <strong>vibrates</strong> when you're running out of time.</span></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="feature">
+            <div class="feature-media reveal">
+              <div class="device">
+                <div class="device-screen">
+                  <div class="mock"><div class="status"><i></i>More</div><div class="pad"></div><div class="dock"><span></span><span></span><span></span><span class="on"></span><span></span></div></div>
+                  <img class="shot" src="../img/capturas/en/mas.png" data-fallback="../img/capturas/es/mas.png" alt="More menu with power, programs and windows" loading="lazy" onerror="vxShot(this)">
+                </div>
+              </div>
+            </div>
+            <div class="feature-text reveal d1">
+              <span class="tag pro">PRO</span>
+              <h2>Your whole PC, in one menu</h2>
+              <p>What usually makes you get up, one tap away.</p>
+              <ul>
+                <li><span>Open <strong>any program</strong> and switch between windows.</span></li>
+                <li><span>Lock, sleep, shut down and <strong>schedule a shutdown</strong>.</span></li>
+                <li><span>Processor and memory usage, and closing a frozen program.</span></li>
+                <li><span>Live <strong>screenshots</strong> and brightness for each monitor.</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <div class="section-head center reveal">
+          <h2>And also</h2>
+        </div>
+        <div class="grid">
+          <div class="card reveal">
+            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg></div>
+            <h3>Browser <span class="tag pro">PRO</span></h3>
+            <p>Tabs, back, reload, zoom and your favorite sites in one tap.</p>
+          </div>
+          <div class="card reveal d1">
+            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="2" width="8" height="4" rx="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/></svg></div>
+            <h3>Clipboard <span class="tag pro">PRO</span></h3>
+            <p>What you copy on the PC reaches your phone, text and images, with history.</p>
+          </div>
+          <div class="card reveal d2">
+            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div>
+            <h3>Several PCs <span class="tag pro">PRO</span></h3>
+            <p>Your desktop, your laptop, your work PC: one tap and you're connected to any of them.</p>
+          </div>
+          <div class="card reveal">
+            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m7 7 10 10-5 5V2l5 5L7 17"/></svg></div>
+            <h3>No Wi-Fi needed <span class="tag free">FREE</span></h3>
+            <p>Connect over Bluetooth when there's no network, with the same security.</p>
+          </div>
+          <div class="card reveal d1">
+            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></div>
+            <h3>Your way <span class="tag free">FREE</span></h3>
+            <p>Dark or light theme, English or Spanish, portrait or landscape, and the cursor speed you like.</p>
+          </div>
+          <div class="card reveal d2">
+            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22c5-3 8-6.5 8-11V5l-8-3-8 3v6c0 4.5 3 8 8 11z"/></svg></div>
+            <h3>Stays connected <span class="tag free">FREE</span></h3>
+            <p>Minimize the app or lock your phone: the connection stays up, and if it drops it comes back on its own.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="alt" id="pro">
+      <div class="wrap">
+        <div class="stats reveal" style="margin-bottom: 96px">
+          <div class="stat"><b>0</b><span>ads</span></div>
+          <div class="stat"><b>0</b><span>data collected</span></div>
+          <div class="stat"><b>2</b><span>ways to connect: Wi-Fi and Bluetooth</span></div>
+          <div class="stat"><b>1</b><span>payment, forever</span></div>
+        </div>
+
+        <div class="section-head center reveal">
+          <h2>Free forever. <span class="glow-text">Pro if you want more.</span></h2>
+          <p>No subscription: Pro is a one-time Google Play purchase that stays on your account.</p>
+        </div>
+        <div class="plans">
+          <div class="plan reveal">
+            <h3>Free</h3>
+            <p class="price">Forever</p>
+            <ul>
+              <li>Full touchpad: clicks, scrolling and gestures</li>
+              <li>Typing with the phone keyboard</li>
+              <li>Wi-Fi and Bluetooth</li>
+              <li>Light and dark themes, English and Spanish</li>
+              <li>One paired PC</li>
+            </ul>
+          </div>
+          <div class="plan pro reveal d1">
+            <span class="ribbon">ONE-TIME</span>
+            <h3>Pro</h3>
+            <p class="price">Everything, no subscription</p>
+            <ul>
+              <li>Everything in the free version</li>
+              <li>Special keys, shortcuts and the full keyboard</li>
+              <li>Music, volume and per-app mixer</li>
+              <li>Presentation mode: slides, laser and timer</li>
+              <li>Browser and web shortcuts</li>
+              <li>Power, programs, windows, status, screenshots and brightness</li>
+              <li>Clipboard with the PC and history</li>
+              <li>Several paired PCs</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap split">
+        <div class="reveal">
+          <h2>Only <span class="glow-text">your devices</span> control your PC</h2>
+          <p style="color: var(--text-2); font-size: 1.08rem">MouseVortex works inside your home: the phone talks directly to the PC, over your network or Bluetooth. No servers in between and no accounts to create.</p>
+          <ul class="checks" style="margin-top: 24px">
+            <li><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg></span><span><strong>Everything encrypted</strong>Every click, key and movement travels encrypted.</span></li>
+            <li><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><path d="M14 14h3v3h-3zM18 18h3v3h-3z"/></svg></span><span><strong>Only paired phones</strong>Nobody gets in without scanning your QR code or entering your PC's PIN. You can revoke any phone from the PC.</span></li>
+            <li><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg></span><span><strong>No impersonation</strong>The phone recognizes your PC: if another one pretends to be it, the phone sends it nothing.</span></li>
+          </ul>
+          <p style="margin-top: 20px"><a href="privacy.html">Privacy policy →</a></p>
+        </div>
+        <div class="shield reveal d1" aria-hidden="true">
+          <svg viewBox="0 0 240 280">
+            <defs>
+              <linearGradient id="sg" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#3de3a0" stop-opacity="0.35"/>
+                <stop offset="1" stop-color="#3de3a0" stop-opacity="0.02"/>
+              </linearGradient>
+            </defs>
+            <path d="M120 10 220 46v80c0 64-42 118-100 144C62 244 20 190 20 126V46z" fill="url(#sg)" stroke="#3de3a0" stroke-opacity="0.6" stroke-width="2"/>
+            <path d="M120 40 192 66v60c0 48-30 89-72 110-42-21-72-62-72-110V66z" fill="none" stroke="#3de3a0" stroke-opacity="0.25" stroke-width="1.5" stroke-dasharray="4 6"/>
+            <rect x="88" y="128" width="64" height="52" rx="10" fill="#08090b" stroke="#3de3a0" stroke-width="3"/>
+            <path d="M100 128v-14a20 20 0 0 1 40 0v14" fill="none" stroke="#3de3a0" stroke-width="3" stroke-linecap="round"/>
+            <circle cx="120" cy="152" r="6" fill="#3de3a0"/>
+            <path d="M120 158v10" stroke="#3de3a0" stroke-width="3" stroke-linecap="round"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="wrap">
+        <div class="box reveal">
+          <img src="../img/icon.png" alt="">
+          <h2>Try it for free</h2>
+          <p>Install the app on your phone and the program on your Windows 10 or 11 PC.</p>
+          <div class="actions">
+            <a class="btn primary" href="https://play.google.com/store/apps/details?id=com.mousevortex.app">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4 2.6v18.8c0 .4.4.7.8.5L21 12.9c.4-.2.4-.8 0-1L4.8 2.1c-.4-.2-.8.1-.8.5z"/></svg>
+              <span class="label"><small>Get it on</small>Google Play</span>
+            </a>
+            <a class="btn" href="download.html">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3 5.5 10 4.5v7H3zM11 4.3 21 3v8.5H11zM3 12.5h7v7l-7-1zM11 12.5h10V21l-10-1.4z"/></svg>
+              <span class="label"><small>Free program</small>Download for PC</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <a class="brand" href="./"><img src="../img/icon.png" alt=""><span>MouseVortex</span></a>
+      <span>© 2026</span>
+      <nav>
+        <a href="download.html">Download</a>
+        <a href="help.html">Help</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="mailto:TU-CORREO@gmail.com">Contact</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>

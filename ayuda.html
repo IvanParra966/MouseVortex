@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="es" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ayuda de MouseVortex</title>
+  <meta name="description" content="Preguntas frecuentes y soluciones a lo más común con MouseVortex.">
+  <meta name="theme-color" content="#08090b">
+  <link rel="icon" href="img/favicon.png">
+  <link rel="alternate" hreflang="en" href="en/help.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script>
+    document.documentElement.className = "";
+    function vxShot(img) {
+      var fallback = img.getAttribute("data-fallback");
+      if (fallback) { img.removeAttribute("data-fallback"); img.src = fallback; return; }
+      var target = img.getAttribute("data-remove");
+      (target ? img.closest(target) : img).remove();
+    }
+  </script>
+  <script src="site.js" defer></script>
+</head>
+<body>
+  <header class="top">
+    <div class="wrap">
+      <a class="brand" href="./"><img src="img/icon.png" alt=""><span>MouseVortex</span></a>
+      <nav class="nav">
+        <a class="hide-sm" href="./#funciones">Funciones</a>
+        <a class="hide-sm" href="./#pro">Pro</a>
+        <a href="ayuda.html" aria-current="page">Ayuda</a>
+        <a class="lang" href="en/help.html" lang="en">EN</a>
+        <a class="get" href="descargar.html">Descargar</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page faq">
+    <div class="wrap">
+      <h1>Ayuda</h1>
+      <p>Las respuestas a lo más común. En la app tienes la guía completa en <strong>Configuración → Instrucciones</strong>.</p>
+
+      <h2>Conectar</h2>
+      <details>
+        <summary>No aparece mi PC en la app</summary>
+        <div>
+          <p>Revisa que el celular y la PC estén en la misma red Wi-Fi y que MouseVortex esté abierto en la PC (el ícono en la bandeja, junto al reloj).</p>
+          <p>La primera vez, Windows pregunta por el firewall: hay que permitir las <strong>redes privadas</strong>. Si aun así no aparece, usa <strong>Conectar por IP</strong> y escribe la IP que muestra la ventana de MouseVortex en la PC.</p>
+        </div>
+      </details>
+      <details>
+        <summary>¿Puedo usarlo sin Wi-Fi?</summary>
+        <div>
+          <p>Sí, por Bluetooth. Primero empareja el celular con la PC en los ajustes de Bluetooth (una sola vez). Después la PC aparece en <strong>Por Bluetooth</strong> en la app: tócala y vincúlala con el PIN.</p>
+        </div>
+      </details>
+      <details>
+        <summary>“La identidad de la PC cambió”</summary>
+        <div>
+          <p>Pasa si reinstalaste MouseVortex en la PC. En la app, olvida esa PC (menú ⋮ → Olvidar) y vincúlala de nuevo. Si no reinstalaste nada, no la vincules: puede que otro equipo se esté haciendo pasar por tu PC.</p>
+        </div>
+      </details>
+      <details>
+        <summary>¿Sigue conectado si minimizo la app?</summary>
+        <div>
+          <p>Sí. Mientras estás conectado, la conexión sigue aunque minimices la app o bloquees el celular; lo indica la notificación “Conectado a…”, que tiene un botón para desconectar. Si se corta (por ejemplo, porque te alejaste), la app se reconecta sola al volver a abrirla.</p>
+        </div>
+      </details>
+      <details>
+        <summary>¿Cómo quito un celular de mi PC?</summary>
+        <div>
+          <p>En la ventana de MouseVortex de la PC, toca <strong>Revocar</strong> junto al celular. Si estaba conectado, se desconecta en el acto y ya no puede volver a entrar sin vincularse de nuevo.</p>
+        </div>
+      </details>
+
+      <h2>Usar</h2>
+      <details>
+        <summary>No responde en algunas ventanas</summary>
+        <div>
+          <p>Windows no deja controlar programas abiertos como administrador, salvo que MouseVortex también se abra como administrador.</p>
+        </div>
+      </details>
+      <details>
+        <summary>No se puede enviar Ctrl + Alt + Supr ni escribir la contraseña de Windows</summary>
+        <div>
+          <p>Windows no permite que ningún programa envíe esa combinación ni escriba en la pantalla de bloqueo. Si solo quieres que no se vea la pantalla, usa <strong>Pantalla</strong> en el menú Más: se apaga el monitor y vuelve al mover el mouse, sin contraseña.</p>
+        </div>
+      </details>
+      <details>
+        <summary>No aparece lo que está sonando</summary>
+        <div>
+          <p>La app que suena tiene que mostrarse en el panel multimedia de Windows (el que aparece al cambiar el volumen). Chrome y Edge muestran una sola pestaña por vez: la última que empezó a sonar.</p>
+        </div>
+      </details>
+      <details>
+        <summary>La captura de un video sale en negro</summary>
+        <div>
+          <p>Algunos videos (Netflix y similares) están protegidos y Windows no deja capturarlos.</p>
+        </div>
+      </details>
+      <details>
+        <summary>No aparece mi monitor en Brillo</summary>
+        <div>
+          <p>Busca la opción “DDC/CI” en el menú del monitor (con sus botones) y actívala. Algunos monitores, televisores y adaptadores no lo permiten.</p>
+        </div>
+      </details>
+
+      <h2>Pro y compras</h2>
+      <details>
+        <summary>¿Qué incluye Pro?</summary>
+        <div>
+          <p>Teclas especiales, atajos y teclado completo; música, volumen y mezclador; modo presentación; navegador; energía, programas, ventanas, estado, capturas y brillo; portapapeles con historial; y varias PCs vinculadas. La versión gratis incluye el touchpad completo y escribir con el teclado del celular, para siempre.</p>
+        </div>
+      </details>
+      <details>
+        <summary>Cambié de celular o reinstalé la app</summary>
+        <div>
+          <p>Pro queda en tu cuenta de Google. Entra con la misma cuenta, abre <strong>Configuración → MouseVortex Pro</strong> y toca <strong>Restaurar compra</strong>.</p>
+        </div>
+      </details>
+      <details>
+        <summary>Tengo un código promocional</summary>
+        <div>
+          <p>Canjéalo en Play Store: menú de tu perfil → <strong>Pagos y suscripciones</strong> → <strong>Canjear código</strong>. Después, en la app, toca <strong>Restaurar compra</strong>.</p>
+        </div>
+      </details>
+      <details>
+        <summary>Quiero un reembolso</summary>
+        <div>
+          <p>Las compras se hacen con Google Play. Puedes pedir el reembolso desde <a href="https://support.google.com/googleplay/answer/2479637">la ayuda de Google Play</a> o escribirnos.</p>
+        </div>
+      </details>
+
+      <div class="note" style="margin-top: 2.5em">
+        <p><strong>¿No encontraste la respuesta?</strong> Escríbenos a <a href="mailto:TU-CORREO@gmail.com">TU-CORREO@gmail.com</a> y cuéntanos qué pasa, con el modelo de tu celular y tu versión de Windows.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <a class="brand" href="./"><img src="img/icon.png" alt=""><span>MouseVortex</span></a>
+      <span>© 2026</span>
+      <nav>
+        <a href="descargar.html">Descargar</a>
+        <a href="ayuda.html">Ayuda</a>
+        <a href="privacidad.html">Privacidad</a>
+        <a href="mailto:TU-CORREO@gmail.com">Contacto</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>

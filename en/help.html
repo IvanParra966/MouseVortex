@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MouseVortex Help</title>
+  <meta name="description" content="Frequently asked questions and fixes for the most common MouseVortex issues.">
+  <meta name="theme-color" content="#08090b">
+  <link rel="icon" href="../img/favicon.png">
+  <link rel="alternate" hreflang="es" href="../ayuda.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+  <script>
+    document.documentElement.className = "";
+    function vxShot(img) {
+      var fallback = img.getAttribute("data-fallback");
+      if (fallback) { img.removeAttribute("data-fallback"); img.src = fallback; return; }
+      var target = img.getAttribute("data-remove");
+      (target ? img.closest(target) : img).remove();
+    }
+  </script>
+  <script src="../site.js" defer></script>
+</head>
+<body>
+  <header class="top">
+    <div class="wrap">
+      <a class="brand" href="./"><img src="../img/icon.png" alt=""><span>MouseVortex</span></a>
+      <nav class="nav">
+        <a class="hide-sm" href="./#features">Features</a>
+        <a class="hide-sm" href="./#pro">Pro</a>
+        <a href="help.html" aria-current="page">Help</a>
+        <a class="lang" href="../ayuda.html" lang="es">ES</a>
+        <a class="get" href="download.html">Download</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page faq">
+    <div class="wrap">
+      <h1>Help</h1>
+      <p>Answers to the most common questions. The full guide is in the app under <strong>Settings → Instructions</strong>.</p>
+
+      <h2>Connecting</h2>
+      <details>
+        <summary>My PC doesn't show up in the app</summary>
+        <div>
+          <p>Check that the phone and the PC are on the same Wi-Fi network and that MouseVortex is open on the PC (the icon in the tray, next to the clock).</p>
+          <p>The first time, Windows asks about the firewall: you need to allow <strong>private networks</strong>. If it still doesn't show up, use <strong>Connect by IP</strong> and type the IP shown in the MouseVortex window on the PC.</p>
+        </div>
+      </details>
+      <details>
+        <summary>Can I use it without Wi-Fi?</summary>
+        <div>
+          <p>Yes, over Bluetooth. First pair the phone with the PC in the Bluetooth settings (just once). Then the PC shows up under <strong>Over Bluetooth</strong> in the app: tap it and pair it with the PIN.</p>
+        </div>
+      </details>
+      <details>
+        <summary>“The PC's identity changed”</summary>
+        <div>
+          <p>It happens if you reinstalled MouseVortex on the PC. In the app, forget that PC (⋮ menu → Forget) and pair it again. If you didn't reinstall anything, don't pair it: another device might be pretending to be your PC.</p>
+        </div>
+      </details>
+      <details>
+        <summary>Does it stay connected if I minimize the app?</summary>
+        <div>
+          <p>Yes. While you're connected, the connection stays up even if you minimize the app or lock the phone; the “Connected to…” notification shows it and has a button to disconnect. If it drops (for example, because you walked away), the app reconnects on its own when you open it again.</p>
+        </div>
+      </details>
+      <details>
+        <summary>How do I remove a phone from my PC?</summary>
+        <div>
+          <p>In the MouseVortex window on the PC, tap <strong>Revoke</strong> next to the phone. If it was connected, it disconnects right away and can't get back in without pairing again.</p>
+        </div>
+      </details>
+
+      <h2>Using it</h2>
+      <details>
+        <summary>It doesn't respond in some windows</summary>
+        <div>
+          <p>Windows doesn't allow controlling programs opened as administrator, unless MouseVortex is also opened as administrator.</p>
+        </div>
+      </details>
+      <details>
+        <summary>I can't send Ctrl + Alt + Del or type the Windows password</summary>
+        <div>
+          <p>Windows doesn't allow any program to send that combination or to type on the lock screen. If you just want the screen hidden, use <strong>Screen</strong> in the More menu: the monitor turns off and comes back when you move the mouse, no password needed.</p>
+        </div>
+      </details>
+      <details>
+        <summary>What's playing doesn't show up</summary>
+        <div>
+          <p>The playing app has to show up in Windows' media panel (the one that appears when you change the volume). Chrome and Edge show only one tab at a time: the last one that started playing.</p>
+        </div>
+      </details>
+      <details>
+        <summary>A video shows up black in the screenshot</summary>
+        <div>
+          <p>Some videos (Netflix and similar) are protected and Windows doesn't allow capturing them.</p>
+        </div>
+      </details>
+      <details>
+        <summary>My monitor doesn't show up under Brightness</summary>
+        <div>
+          <p>Look for the “DDC/CI” option in the monitor's menu (using its buttons) and turn it on. Some monitors, TVs and adapters don't support it.</p>
+        </div>
+      </details>
+
+      <h2>Pro and purchases</h2>
+      <details>
+        <summary>What does Pro include?</summary>
+        <div>
+          <p>Special keys, shortcuts and the full keyboard; music, volume and mixer; presentation mode; browser; power, programs, windows, status, screenshots and brightness; clipboard with history; and several paired PCs. The free version includes the full touchpad and typing with the phone keyboard, forever.</p>
+        </div>
+      </details>
+      <details>
+        <summary>I changed phones or reinstalled the app</summary>
+        <div>
+          <p>Pro stays on your Google account. Sign in with the same account, open <strong>Settings → MouseVortex Pro</strong> and tap <strong>Restore purchase</strong>.</p>
+        </div>
+      </details>
+      <details>
+        <summary>I have a promo code</summary>
+        <div>
+          <p>Redeem it in the Play Store: your profile menu → <strong>Payments &amp; subscriptions</strong> → <strong>Redeem code</strong>. Then, in the app, tap <strong>Restore purchase</strong>.</p>
+        </div>
+      </details>
+      <details>
+        <summary>I want a refund</summary>
+        <div>
+          <p>Purchases are made through Google Play. You can request a refund from <a href="https://support.google.com/googleplay/answer/2479637">Google Play Help</a> or write to us.</p>
+        </div>
+      </details>
+
+      <div class="note" style="margin-top: 2.5em">
+        <p><strong>Didn't find the answer?</strong> Write to us at <a href="mailto:TU-CORREO@gmail.com">TU-CORREO@gmail.com</a> and tell us what's happening, with your phone model and your Windows version.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <a class="brand" href="./"><img src="../img/icon.png" alt=""><span>MouseVortex</span></a>
+      <span>© 2026</span>
+      <nav>
+        <a href="download.html">Download</a>
+        <a href="help.html">Help</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="mailto:TU-CORREO@gmail.com">Contact</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>
